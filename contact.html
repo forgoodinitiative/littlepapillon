@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Little Papillon</title>
+  <meta name="description" content="Book a tour or ask about availability at Little Papillon Childcare, 1436 Cambridge Dr., Coquitlam, BC.">
+  <meta property="og:title" content="Contact | Little Papillon">
+  <meta property="og:description" content="Book a tour or ask about availability at Little Papillon Childcare, 1436 Cambridge Dr., Coquitlam, BC.">
+  <meta property="og:image" content="https://www.littlepapillon.ca/images/home/01.jpg">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main">
+      <a class="brand" href="/">
+        <img src="/images/logo.png" alt="Little Papillon butterfly logo" width="58" height="53">
+        <span class="brand-text"><small>Little Papillon</small><strong>Childcare</strong></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/offerings">Our Offerings</a></li>
+        <li><a href="/programs">Programs</a></li>
+        <li><a href="/contact" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="page-banner"><h1>Contact Us</h1></div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 style="color:var(--blue)">We&rsquo;d love to hear from you!</h2>
+          <p>Whether you&rsquo;d like to book a tour, ask about availability, or simply learn more about our program, we&rsquo;re always happy to connect with families.</p>
+          <p>Please reach out by phone, email, or by using the contact form &mdash; and we&rsquo;ll get back to you as soon as possible.</p>
+          <ul class="contact-list">
+            <li><span class="ic" aria-hidden="true">📍</span><span>1436 Cambridge Dr.<br>Coquitlam, BC V3J 2P7</span></li>
+            <li><span class="ic" aria-hidden="true">✉️</span><a href="mailto:littlepapillonca@gmail.com">littlepapillonca@gmail.com</a></li>
+            <li><span class="ic" aria-hidden="true">📞</span><a href="tel:+16048495241">(604) 849-5241</a></li>
+          </ul>
+          <iframe class="map" title="Map to Little Papillon Childcare" loading="lazy"
+            src="https://www.google.com/maps?q=1436+Cambridge+Dr,+Coquitlam,+BC+V3J+2P7&output=embed"></iframe>
+        </div>
+        <form class="reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden"><label>Don&rsquo;t fill this out: <input name="bot-field"></label></p>
+          <div class="row">
+            <label>Parent&rsquo;s Full Name *<input name="name" required autocomplete="name"></label>
+            <label>Child&rsquo;s Age *<input name="child_age" required placeholder="e.g. 3 years"></label>
+          </div>
+          <div class="row">
+            <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+            <label>Phone *<input type="tel" name="phone" required autocomplete="tel"></label>
+          </div>
+          <label>Message<textarea name="message" placeholder="Tell us a bit about your child, or when you&rsquo;d like to visit"></textarea></label>
+          <button class="btn solid" type="submit">Submit</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>&copy; <span data-year>2026</span> Little Papillon Childcare</span>
+      <span>Licensed Childcare in Coquitlam, BC &middot; <a href="tel:+16048495241">(604) 849-5241</a></span>
+    </div>
+  </footer>
+  <script src="/assets/main.js" defer></script>
+</body>
+</html>

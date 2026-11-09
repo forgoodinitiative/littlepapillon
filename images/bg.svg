@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="1000" fill="#fdf1ec"/>
+  <g opacity="0.55">
+    <polygon points="0,0 420,0 180,340" fill="#77b8db"/>
+    <polygon points="420,0 760,0 560,260" fill="#fbc4cc"/>
+    <polygon points="760,0 1120,0 980,300" fill="#9cd3a5"/>
+    <polygon points="1120,0 1600,0 1600,220 1300,380" fill="#f39aa7"/>
+    <polygon points="0,0 180,340 0,520" fill="#fde59a"/>
+    <polygon points="180,340 420,0 560,260" fill="#c9d3e0"/>
+    <polygon points="560,260 760,0 980,300" fill="#ff9d9d"/>
+    <polygon points="980,300 1120,0 1300,380" fill="#77b8db"/>
+    <polygon points="1300,380 1600,220 1600,640" fill="#fde59a"/>
+    <polygon points="0,520 180,340 360,700 0,820" fill="#f39aa7"/>
+    <polygon points="180,340 560,260 360,700" fill="#9cd3a5"/>
+    <polygon points="560,260 980,300 760,640" fill="#fbe7c6"/>
+    <polygon points="360,700 560,260 760,640" fill="#77b8db"/>
+    <polygon points="760,640 980,300 1180,700" fill="#f39aa7"/>
+    <polygon points="980,300 1300,380 1180,700" fill="#c9d3e0"/>
+    <polygon points="1180,700 1300,380 1600,640" fill="#9cd3a5"/>
+    <polygon points="0,820 360,700 300,1000 0,1000" fill="#77b8db"/>
+    <polygon points="360,700 760,640 660,1000 300,1000" fill="#fde59a"/>
+    <polygon points="760,640 1180,700 1060,1000 660,1000" fill="#9cd3a5"/>
+    <polygon points="1180,700 1600,640 1600,1000 1060,1000" fill="#fbc4cc"/>
+  </g>
+</svg>

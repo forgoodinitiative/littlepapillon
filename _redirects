@@ -1,0 +1,4 @@
+# Keep old Wix URLs working
+/about-us               /about      301
+/our-offerings          /offerings  301
+/copy-of-our-offerings  /programs   301

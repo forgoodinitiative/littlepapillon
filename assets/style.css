@@ -165,7 +165,7 @@ main { flex: 1; width: 100%; max-width: var(--maxw); margin: 28px auto 48px; pad
 
 .icon-badge { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; font-size: 28px; margin-bottom: 10px; background: #fff4e6; }
 
-.about-img { border-radius: 14px; width: 100%; height: auto; box-shadow: var(--shadow); }
+.about-img { border-radius: 14px; width: min(100%, 300px); aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 40%; justify-self: center; box-shadow: var(--shadow); }
 .lead { font-size: 20px; color: var(--muted); }
 blockquote.highlight {
   margin: 24px 0; padding: 18px 24px; border-left: 6px solid var(--green);

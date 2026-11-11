@@ -17,15 +17,18 @@ serve.py         local preview only
 ## Preview locally
     python3 serve.py        # then open http://localhost:5173
 
-## Deploy for free (Netlify, recommended because the contact form works out of the box)
-1. Sign up at netlify.com, then choose "Add new site" > "Deploy manually" and drag this folder in.
-2. Go to Site configuration > Forms and turn on form detection, then redeploy.
-   Under Forms > Notifications, add an email notification so submissions reach littlepapillonca@gmail.com.
-3. Domain: Domain management > Add a domain > littlepapillon.ca. Follow the DNS steps.
-   Move the domain off Wix first, or point its DNS at Netlify, *before* you cancel the Wix plan.
+## Contact form (EmailJS)
+The form sends through EmailJS, so it works on any host.
+1. At emailjs.com: add an Email Service (Gmail, littlepapillonca@gmail.com) and an Email Template.
+2. In the template use `{{name}}`, `{{child_age}}`, `{{email}}`, `{{phone}}`, `{{message}}`.
+   Set "Reply To" to `{{email}}` so replies go straight to the parent.
+3. Paste the public key, service ID and template ID into `EMAILJS` at the bottom of assets/main.js.
+4. Under Account > Security, restrict requests to littlepapillon.ca.
 
-Cloudflare Pages and GitHub Pages also work, but the contact form needs a
-service such as Formspree there: set the form's `action` to your Formspree URL.
+## Deploy for free (Netlify, Cloudflare Pages or GitHub Pages)
+1. Sign up at netlify.com, then choose "Add new site" > "Deploy manually" and drag this folder in.
+2. Domain: Domain management > Add a domain > littlepapillon.ca. Follow the DNS steps.
+   Move the domain off Wix first, or point its DNS at Netlify, *before* you cancel the Wix plan.
 
 ## Editing
 - Text: open the .html file and edit the words between the tags.

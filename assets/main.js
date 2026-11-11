@@ -77,7 +77,12 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-// Contact form (Netlify Forms). Submits via fetch so parents stay on the page.
+// Contact form (EmailJS). Keys from the EmailJS dashboard; the public key is meant to be public.
+const EMAILJS = {
+  publicKey: "p8_vXqkMIdqEuyfhW", // Account > General
+  serviceId: "service_mu22k2o",   // Email Services
+  templateId: "template_i4s91t4", // Email Templates
+};
 const form = document.querySelector("form[name='contact']");
 if (form) {
   const status = form.querySelector(".form-status");
@@ -88,12 +93,10 @@ if (form) {
     status.className = "form-status";
     status.textContent = "Sending…";
     try {
-      const res = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(new FormData(form)).toString(),
-      });
-      if (!res.ok) throw new Error(res.status);
+      // Honeypot filled = bot: pretend success, send nothing.
+      if (!form.elements["bot-field"].value) {
+        await emailjs.sendForm(EMAILJS.serviceId, EMAILJS.templateId, form, { publicKey: EMAILJS.publicKey });
+      }
       form.reset();
       status.classList.add("ok");
       status.textContent = "Thank you! We'll get back to you as soon as possible.";
